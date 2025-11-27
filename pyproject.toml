@@ -1,0 +1,32 @@
+[project]
+name = "chat-bot-assesment"
+version = "0.1.0"
+description = ""
+authors = [
+    {name = "Your Name",email = "you@example.com"}
+]
+readme = "README.md"
+requires-python = ">=3.10,<3.11"
+dependencies = [
+    "langchain (>=1.1.0,<2.0.0)",
+    "langchain-community (>=0.4.1,<0.5.0)",
+    "langchain-core (>=1.1.0,<2.0.0)",
+    "langchain-huggingface (>=1.1.0,<2.0.0)",
+    "langchain-openai (>=1.1.0,<2.0.0)",
+    "langchain-text-splitters (>=1.0.0,<2.0.0)",
+    "chromadb (>=1.3.5,<2.0.0)",
+    "sentence-transformers (>=5.1.2,<6.0.0)",
+    "python-docx (>=1.2.0,<2.0.0)",
+    "pdfminer-six (>=20251107,<20251108)",
+    "openai (>=2.8.1,<3.0.0)",
+    "streamlit (>=1.51.0,<2.0.0)",
+    "python-dotenv (>=1.2.1,<2.0.0)",
+    "tiktoken (>=0.12.0,<0.13.0)",
+    "duckduckgo-search (>=8.1.1,<9.0.0)",
+    "pypdf (>=6.4.0,<7.0.0)"
+]
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
