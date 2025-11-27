@@ -49,7 +49,7 @@ def create_rag_chain(docs):
     # --- RAG pipeline: Retrieve → Build context → LLM ---
     rag_pipeline = (
         {
-            "context": retriever,  # retrieves docs
+            "context": lambda x: retriever.invoke(x["question"]),  # retrieves docs
             "question": RunnablePassthrough(),  # passes question untouched
         }
         | prompt

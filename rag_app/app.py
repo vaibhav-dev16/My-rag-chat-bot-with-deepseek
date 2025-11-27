@@ -2,6 +2,7 @@ import streamlit as st
 from loaders import load_document
 from rag_chain import create_rag_chain
 from utils import init_session
+
 # -----------------------------------
 # Streamlit Init
 # -----------------------------------
@@ -39,9 +40,11 @@ if user_input and st.session_state.qa_chain:
     st.session_state.chat_history_ui.append(("user", user_input))
 
     with st.spinner("Thinking..."):
-        response = st.session_state.qa_chain({"question": user_input})
-
-    answer = response["answer"]
+        response = st.session_state.qa_chain.invoke(
+            {"question": user_input}, config={"configurable": {"session_id": "chat1"}}
+        )
+    print("response :", response)
+    answer = response.content
     st.session_state.chat_history_ui.append(("assistant", answer))
 
 # -----------------------------------
