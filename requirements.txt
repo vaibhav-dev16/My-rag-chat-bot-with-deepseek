@@ -1,0 +1,28 @@
+
+langchain
+langchain-community
+langchain-core
+langchain-huggingface
+langchain-openai
+langchain-text-splitters
+
+# Vector database and embeddings
+chromadb
+sentence-transformers
+
+# Document processing
+python-docx
+pdfminer.six
+
+# LLM and AI
+openai
+
+# Web framework
+streamlit
+
+# Utilities
+python-dotenv
+tiktoken
+
+# Search tool
+duckduckgo-search

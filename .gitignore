@@ -1,0 +1,86 @@
+# ----------------------------
+# Python
+# ----------------------------
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.pdb
+*.pkl
+*.pklz
+*.db
+
+# Virtual Environment
+venv/
+env/
+.venv/
+ENV/
+
+# ----------------------------
+# Streamlit
+# ----------------------------
+.streamlit/secrets.toml
+.streamlit/*.lock
+.streamlit/cache/
+.streamlit/*_cache/
+
+# ----------------------------
+# ChromaDB
+# ----------------------------
+chroma_store/
+chroma/
+index/
+*.bin
+*.chroma
+
+# ----------------------------
+# Temporary Uploaded Files
+# ----------------------------
+temp.*
+*.tmp
+*.temp
+uploads/
+uploaded_files/
+
+# ----------------------------
+# DeepSeek / Keys / Credentials
+# ----------------------------
+*.env
+*.venv
+venv
+.env.local
+.env.*.local
+config.env
+secret.key
+*.pem
+
+# ----------------------------
+# Logs
+# ----------------------------
+*.log
+logs/
+nohup.out
+chroma_store
+
+# ----------------------------
+# OS System Files
+# ----------------------------
+.DS_Store
+Thumbs.db
+desktop.ini
+$RECYCLE.BIN/
+
+# ----------------------------
+# IDE / Editor
+# ----------------------------
+.vscode/
+.idea/
+*.iml
+
+# ----------------------------
+# Cache / Build
+# ----------------------------
+.cache/
+*.egg-info/
+dist/
+build/
